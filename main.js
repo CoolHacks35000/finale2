@@ -573,7 +573,6 @@ function createMine() {
 }
 function movePlayer(dir) {
     if (canMine) {
-        if (moveTimes.checkTimes()) {
             saveAllData();
             setTimeout(() => {
             location.reload();
