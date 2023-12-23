@@ -1009,7 +1009,7 @@ function loadContent() {
     } else {
         clearInterval(loopTimer);
         if (gears[2]) {
-            miningSpeed = 15;
+            miningSpeed = 0.00001;
         }
         loopTimer = setInterval(movePlayer, miningSpeed, direction);
         curDirection = direction;
