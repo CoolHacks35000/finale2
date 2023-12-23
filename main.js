@@ -1,23 +1,4 @@
-class antiCheat {
-        #lastMove;
-        #inRow;
-    constructor() {
-        this.#lastMove = Date.now();
-        this.#inRow = 0;
-        }
-        #getNewTime() {
-            this.#lastMove = Date.now();
-        }
-        checkTimes() {
-            if (Date.now() - this.#lastMove <= 5) {
-                this.#inRow++;
-            } else {
-                this.#inRow = 0;
-            }
-            this.#getNewTime();
-            return (this.#inRow > 10);
-        }
-}
+
 class secureLogs {
     #spawnLogs;
     #verifiedLogs;
